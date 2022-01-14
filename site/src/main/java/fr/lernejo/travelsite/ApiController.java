@@ -4,8 +4,7 @@ import java.util.ArrayList;
 
 @RestController
 public class ApiController {
-    private final ArrayList<PotentialDestinations> travel = new ArrayList<>();
-
+    
     @PostMapping(value = "/api/inscription")
     public Registration add(@RequestBody Registration registration) {
         return registration;
